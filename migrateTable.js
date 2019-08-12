@@ -2,46 +2,78 @@
 const AWS = require("aws-sdk");
 AWS.config.region = "us-east-1";
 var dynamodb = new AWS.DynamoDB();
+const async = require("async");
 
 const dev = "dev";
 const staging = "staging";
 const prod = "prod";
-const envs = [staging];
+const envs = [dev, staging, prod];
+
 
 /*****************Make Changes Below************************* */
-const changable = "Hitplay"; //match the table id
-
+const changable = "Veeva"; //match the table id
 /*****************Main*************************************************************** */
-
-var locationArray = LocationIds(changable);
-console.log(locationArray);
-locationArray.forEach(function(location) {
-  var roomArray = getRoomIds(location);
-  console.log(roomArray);
-  /* roomArray.forEach(function(room) {
-    dynamodb.query(getQueryParams(location, room), function(
-      err,
-      data
-    ) {
-      if (err) {
-        console.log("Error", err);
-      } else {
-        var cut = cutData(data.Items);
-        cut.map(function(item) {
-          dynamodb.putItem(prepareWriteParam(item), function(err, data) {
-            if (err) console.log(err, err.stack);
-            else console.log("success"); // successful response
+async.waterfall(
+  [
+    next =>
+      dynamodb.query(LocationIdsParams(changable), (err, result) => {
+        const locations =
+          result && result.Items && result.Items.length
+            ? result.Items.reduce((prev, item) => {
+                prev.push(item.id.S);
+                return prev;
+              }, [])
+            : [];
+        next(err, locations);
+      }),
+    (locations, next) => {
+      async.each(
+        locations,
+        (location, eachCallback) => {
+          dynamodb.query(getRoomIdParams(location), (err, result) => {
+            const rooms =
+              result && result.Items && result.Items.length
+                ? result.Items.reduce((prev, item) => {
+                    var RoomID = item.id.S;
+                    prev.push({ location, RoomID });
+                    return prev;
+                  }, [])
+                : [];
+            console.log(rooms);
+            rooms.forEach(room => {
+              dynamodb.query(getQueryParams(room), (err, data) => {
+                if (err) {
+                  console.log("Error", err);
+                } else {
+                  var cut = cutData(data.Items);
+                  cut.map(item => {
+                    dynamodb.putItem(prepareWriteParam(item), (err, data) => {
+                      if (err) console.log(err, err.stack);
+                      else console.log("success"); // successful response
+                    });
+                  });
+                }
+              });
+            });
           });
-        });
-      }
-    });
-  }); */
-});
+          eachCallback(null, null);
+        },
+        (err, data) => {
+          next(null, null);
+        }
+      );
+    }
+  ],
+  (err, results) => {
+    console.log(results);
+    console.log(err);
+  }
+);
 
-/*****************getLocationIds if client is specified (return an Array)************************* */
+/*****************getLocationIds if client is specified (input string return the params)************************* */
 
-function LocationIds(owner) {
-  var params = {
+function LocationIdsParams(owner) {
+  return {
     TableName: "hpc-locations-prod",
     KeyConditionExpression: "#owner = :owner",
     ExpressionAttributeNames: {
@@ -51,24 +83,11 @@ function LocationIds(owner) {
       ":owner": { S: owner }
     }
   };
-
- dynamodb.query(params, function(err, data) {
-    if (err) {
-      console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-    } else {
-      console.log("Query succeeded.");
-      var output = data.Items.reduce(function(prev, item) {
-        prev.push(item.id.S);
-        return prev;
-      }, []);
-      return output;
-    }
-  });
 }
-/*****************getRoomIDs if Location is specified (return an Array)************************* */
+/*****************getRoomIDs if Location is specified (input array return an Array)************************* */
 
-function getRoomIds(LocationID) {
-  var params = {
+function getRoomIdParams(LocationID) {
+  return {
     TableName: "hpc-rooms-prod",
     KeyConditionExpression: "#LID = :lid",
     ExpressionAttributeNames: {
@@ -78,22 +97,10 @@ function getRoomIds(LocationID) {
       ":lid": { S: LocationID }
     }
   };
-  dynamodb.query(params, function(err, data) {
-    if (err) {
-      console.error("Unable to query. Error:", JSON.stringify(err, null, 2));
-    } else {
-      console.log("Query succeeded.");
-      var output = data.Items.reduce(function(prev, item) {
-        prev.push(item.id.S);
-        return prev;
-      }, []);
-      return output;
-    }
-  });
 }
 
 /*****************Query Device Data from Old Table (per room)************************* */
-function getQueryParams(LocationId, RoomId) {
+function getQueryParams(obj) {
   const params = {
     IndexName: "LocationId-RoomId-index",
     ExpressionAttributeNames: {
@@ -102,15 +109,16 @@ function getQueryParams(LocationId, RoomId) {
     },
     ExpressionAttributeValues: {
       ":lid": {
-        S: LocationId
+        S: obj.location
       },
       ":rid": {
-        S: RoomId
+        S: obj.RoomID
       }
     },
     TableName: "DeviceInfo",
     KeyConditionExpression: "#LID = :lid AND #RID = :rid"
   };
+  console.log(params);
   return params;
 }
 
@@ -191,7 +199,7 @@ function prepareWriteParam(device) {
       Username: wUsername
     },
     ReturnConsumedCapacity: "TOTAL",
-    TableName: "DeviceSystem-dev"
+    TableName: "DeviceSystem-staging"
   };
   return params;
 }
