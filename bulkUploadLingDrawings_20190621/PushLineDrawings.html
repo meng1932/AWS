@@ -1,0 +1,52 @@
+<html>
+<head>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+
+<script>
+
+AWS.config.update({
+  region: "us-east-1",
+  endpoint: 'apigateway.us-east-1.amazonaws.com',
+  accessKeyId: "AKIA2JVAMM6EH5CHHBEQ",
+  // secretAccessKey default can be used while using the downloadable version of DynamoDB. 
+  // For security reasons, do not store AWS Credentials in your files. Use Amazon Cognito instead.
+  secretAccessKey: "aKCud6R5AzA+RGzFoo4TjCPyrndidl0pKsuuUofX"
+});
+
+var docClient = new AWS.DynamoDB.DocumentClient();
+
+function queryData() {
+    document.getElementById('textarea').innerHTML += "Querying by location";
+
+    var params = {
+        TableName : "hpc-rooms-dev",
+        KeyConditionExpression: "#yr = :yyyy",
+        ExpressionAttributeNames:{
+            "#yr": "locationId"
+        },
+        ExpressionAttributeValues: {
+            ":yyyy":"Mars_3lquf9gx"
+        }
+    };
+
+    docClient.query(params, function(err, data) {
+        if (err) {
+            console.log(err);
+            document.getElementById('textarea').innerHTML += "Unable to query. Error: " + "\n" + JSON.stringify(err, undefined, 2);
+        } else {
+            console.log(data);
+            document.getElementById('textarea').innerHTML += "Querying for movies from 1985: " + "\n" + data;
+        }
+    });
+}
+
+</script>
+</head>
+
+<body>
+<input id="queryData" type="button" value="Query" onclick="queryData();" />
+<br><br>
+<textarea readonly id= "textarea" style="width:400px; height:800px"></textarea>
+
+</body>
+</html> 
