@@ -2,9 +2,9 @@ const MyFunc = require("../ReUsables/MyFunc.js");
 const Valid = require("../ReUsables/Validation");
 const getRoomId = MyFunc.getRoomId;
 const getSysInfo = MyFunc.getSysInfo;
-const dailyValidation = Valid.dailyRefreshValidation;
+const systemInfoValidation = Valid.systemInfoValidation;
 
-getRoomId("Aviva_jt5yo7in")
+/* getRoomId("SpinMaster_jrgj8lab")
   .then(rooms => {
     rooms.forEach(room => {
       getSysInfo(room)
@@ -18,7 +18,7 @@ getRoomId("Aviva_jt5yo7in")
   })
   .catch(err => {
     console.log(err);
-  });
+  }); */
 
 var arr = [
   {
@@ -33,17 +33,17 @@ var arr = [
     roomId: "jt5yo7in_111",
     deviceId: "DM-TX-4K-202-C_01",
     deviceName: "Receiver",
-    ip: "10.173.181.100",
+    ip: "",
     serial: "1846NEJ09852",
     mac: "00.10.7f.bc.21.9c"
   },
   {
     roomId: "jt5yo7in_111",
     deviceId: "DM-TX-4K-202-C_01",
-    deviceName: "Receiver",
+    deviceName: "Processor",
     ip: "10.173.181.100",
-    serial: "1846NEJ09852",
-    mac: "00.10.7f.bc.21.9c"
+    serial: "",
+    mac: ""
   },
   {
     roomId: "jt5yo7in_111",
@@ -54,3 +54,5 @@ var arr = [
     mac: "00.10.7F.C1.94.D4"
   }
 ];
+
+arr.forEach(device=>systemInfoValidation(device));

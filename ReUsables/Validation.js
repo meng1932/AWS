@@ -18,11 +18,26 @@ exports.dailyRefreshValidation = dailyRefreshValidation;
 /*****
  * Validation for SystemInfo
  * give msg of passed or not passed
+ * check by device name, for different device it should have different manners
  * ** */
 
 var systemInfoValidation = item => {
-  var typeNeedCheck = ["Processor", "Receiver", "Transmitter"];
-  var needCheck=typeNeedCheck.match(item.deviceName.S);
+  PRTValidation(item);
+};
+
+var PRTValidation = item => {
+  const typeNeedCheck = ["Processor", "Receiver", "Transmitter"];
+  var needCheck = typeNeedCheck.includes(item.deviceName);
+  var noIp = item.ip === "" || item.ip === "0.0.0.0";
+  var noMac = item.mac === "" || item.mac === "00-00-00-00-00-00";
+  var noSerial = item.serial === "";
+  //console.log(needCheck, noIp, noMac, noSerial);
+  var msg = `${item.deviceId} in room ${item.roomId} does not have ${
+    noIp ? "IP, " : ""
+  }${noMac ? "MAC, " : ""}${noSerial ? "Serial Number" : ""}`;
+  if (noIp || noMac || noSerial) {
+    console.log(msg);
+  }
 };
 
 exports.systemInfoValidation = systemInfoValidation;
