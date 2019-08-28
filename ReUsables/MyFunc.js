@@ -46,9 +46,9 @@ exports.getRoomId = getRoomId;
  * receive the {deviceId, date_last_motified} pairs in Promise
  * using table DeviceInfo
  * ** */
-var getDeviceInfo = (room) => {
-  let roomId=room.roomId;
-  let locationId=room.locationId;
+var getDeviceInfo = room => {
+  let roomId = room.roomId;
+  let locationId = room.locationId;
   return new Promise((resolve, reject) => {
     dynamodb.query(getDeviceInfoParams(roomId, locationId), (err, result) => {
       if (err) {
@@ -94,18 +94,49 @@ getDeviceInfoParams = (roomId, locationId) => {
 exports.getDeviceInfo = getDeviceInfo;
 
 /*****
- * Validation for daily refresh 
- * give msg of passed or not passed
+ * given roomId
+ * receive the {deviceId, date_last_motified} pairs in Promise
+ * using table DeviceSystem-prod
  * ** */
-var today = new Date().toJSON().slice(0, 11);
-
-var dailyValidation = item => {
-  var realDevice = !item.key.match("Sample_Data");
-  var notUpdate = !(item.lastMotified.slice(0, 11) === today);
-  if (notUpdate && realDevice) {
-    let msg=`${item.deviceId} in room ${item.roomId} did not refresh today`
-    console.log(msg);
-  }
+var getSysInfo = room => {
+  let roomId = room.roomId;
+  let locationId = room.locationId;
+  return new Promise((resolve, reject) => {
+    dynamodb.query(getSysInfoParams(roomId, locationId), (err, result) => {
+      if (err) {
+        reject(err);
+      }
+      let arr =
+        result && result.Items && result.Items.length
+          ? result.Items.reduce((prev, item) => {
+              var deviceId = item.DeviceId.S;
+              var deviceName = !!item.DeviceName.S ? item.DeviceName.S : "";
+              var ip = !!item.IpAddress.S ? item.IpAddress.S : "";
+              var serial = !!item.SerialNumber.S ? item.SerialNumber.S : "";
+              var mac = !!item.MacAddress.S ? item.MacAddress.S : "";
+              prev.push({ roomId, deviceId, deviceName, ip, serial, mac });
+              return prev;
+            }, [])
+          : [];
+      resolve(arr);
+    });
+  });
 };
 
-exports.dailyValidation = dailyValidation;
+getSysInfoParams = (roomId, locationId) => {
+  return {
+    TableName: "DeviceInfo",
+    IndexName: "LocationId-RoomId-index",
+    KeyConditionExpression: "#LID = :lid and #RID = :rid",
+    ExpressionAttributeNames: {
+      "#LID": "LocationId",
+      "#RID": "RoomId"
+    },
+    ExpressionAttributeValues: {
+      ":lid": { S: locationId },
+      ":rid": { S: roomId }
+    }
+  };
+};
+
+exports.getSysInfo = getSysInfo;
