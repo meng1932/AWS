@@ -5,9 +5,10 @@ var dynamodb = new AWS.DynamoDB();
 /************************************ */
 //input: locationId
 //output: [... { locationId, roomId }];
+let arr = [];
 let getRoomId = locationId => {
   dynamodb.query(getRoomIdParams(locationId), (err, result) => {
-    const arr =
+    arr =
       result && result.Items && result.Items.length
         ? result.Items.reduce((prev, item) => {
             var roomId = item.id.S;
@@ -17,7 +18,7 @@ let getRoomId = locationId => {
         : [];
     console.log(arr);
   });
-};
+}
 
 getRoomIdParams = locationId => {
   return {

@@ -6,8 +6,8 @@ var dynamodb = new AWS.DynamoDB();
 //input: locationId
 //output: [... { locationId, roomId }];
 let getRoomId = locationId => {
-  return await new Promise((res,rej)=>{
-    dynamodb.query(params, function(err, data) {
+  return new Promise((res,rej)=>{
+    dynamodb.query(getRoomIdParams(locationId), function(err, data) {
         if (err) {
           console.log("Error", err);
           resolve({
@@ -47,3 +47,5 @@ getRoomIdParams = locationId => {
 };
 
 //exports.getRoomId = getRoomId;
+
+getRoomId("Aviva_jt5yo7in");
