@@ -5,20 +5,25 @@ var dynamodb = new AWS.DynamoDB();
 /************************************ */
 //input: locationId
 //output: [... { locationId, roomId }];
-let arr = [];
-let getRoomId = locationId => {
-  dynamodb.query(getRoomIdParams(locationId), (err, result) => {
-    arr =
-      result && result.Items && result.Items.length
-        ? result.Items.reduce((prev, item) => {
-            var roomId = item.id.S;
-            prev.push({ locationId, roomId });
-            return prev;
-          }, [])
-        : [];
-    console.log(arr);
+
+var getRoomId = locationId => {
+  return new Promise((resolve, reject) => {
+    dynamodb.query(getRoomIdParams(locationId), (err, result) => {
+      if (err) {
+        reject(err);
+      }
+      let arr =
+        result && result.Items && result.Items.length
+          ? result.Items.reduce((prev, item) => {
+              var roomId = item.id.S;
+              prev.push({ locationId, roomId });
+              return prev;
+            }, [])
+          : [];
+      resolve(arr);
+    });
   });
-}
+};
 
 getRoomIdParams = locationId => {
   return {
