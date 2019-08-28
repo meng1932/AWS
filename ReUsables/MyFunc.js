@@ -40,19 +40,21 @@ getRoomIdParams = locationId => {
 };
 
 exports.getRoomId = getRoomId;
+
 /*****
  * given roomId
  * receive the {deviceId, date_last_motified} pairs in Promise
  * using table DeviceInfo
  * ** */
-
-var getDeviceInfo = (locationId, roomId) => {
+var getDeviceInfo = (room) => {
+  let roomId=room.roomId;
+  let locationId=room.locationId;
   return new Promise((resolve, reject) => {
     dynamodb.query(getDeviceInfoParams(roomId, locationId), (err, result) => {
       if (err) {
         reject(err);
       }
-      console.log(result);
+      //console.log(result);
       let arr =
         result && result.Items && result.Items.length
           ? result.Items.reduce((prev, item) => {
@@ -90,3 +92,20 @@ getDeviceInfoParams = (roomId, locationId) => {
 };
 
 exports.getDeviceInfo = getDeviceInfo;
+
+/*****
+ * Validation for daily refresh 
+ * give msg of passed or not passed
+ * ** */
+var today = new Date().toJSON().slice(0, 11);
+
+var dailyValidation = item => {
+  var realDevice = !item.key.match("Sample_Data");
+  var notUpdate = !(item.lastMotified.slice(0, 11) === today);
+  if (notUpdate && realDevice) {
+    let msg=`${item.deviceId} in room ${item.roomId} did not refresh today`
+    console.log(msg);
+  }
+};
+
+exports.dailyValidation = dailyValidation;
