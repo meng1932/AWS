@@ -26,7 +26,15 @@ var systemInfoValidation = item => {
 };
 
 var PRTValidation = item => {
-  const typeNeedCheck = ["Processor", "Receiver", "Transmitter"];
+  const typeNeedCheck = [
+    "Processor",
+    "Receiver",
+    "Transmitter",
+    "Audio DSP",
+    "Audio Processor",
+    "Video Call",
+    "Video Conference"
+  ];
   var needCheck = typeNeedCheck.includes(item.deviceName);
   var noIp = item.ip === "" || item.ip === "0.0.0.0";
   var noMac = item.mac === "" || item.mac === "00-00-00-00-00-00";
@@ -35,7 +43,7 @@ var PRTValidation = item => {
   var msg = `${item.deviceId} in room ${item.roomId} does not have ${
     noIp ? "IP, " : ""
   }${noMac ? "MAC, " : ""}${noSerial ? "Serial Number" : ""}`;
-  if (noIp || noMac || noSerial) {
+  if (needCheck && (noIp || noMac || noSerial)) {
     console.log(msg);
   }
 };
