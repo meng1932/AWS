@@ -17,7 +17,8 @@ var getRoomId = locationId => {
         result && result.Items && result.Items.length
           ? result.Items.reduce((prev, item) => {
               var roomId = item.id.S;
-              prev.push({ locationId, roomId });
+              var roomType = item.type.S;
+              prev.push({ locationId, roomId, roomType });
               return prev;
             }, [])
           : [];

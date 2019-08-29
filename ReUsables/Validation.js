@@ -49,3 +49,34 @@ var PRTValidation = item => {
 };
 
 exports.systemInfoValidation = systemInfoValidation;
+
+/*****
+ * Validation for Others
+ * ** */
+
+var DocValidation = (room, typeList, drawingList) => {
+  //UGValidation(room, typeList);
+  LDValidation(room, drawingList);
+};
+
+var UGValidation = (room, typeList) => {
+  var hasUG = typeList.some(type => {
+    return type.indexOf(room.roomType) > 0;
+  });
+  var msg = `no UserGuide for ${room.roomType} in this location`;
+  if (!hasUG) {
+    console.log(msg);
+  }
+};
+
+var LDValidation = (room, drawingList) => {
+  var hasLineDrawings = drawingList.some(LD => {
+    return LD.indexOf(room.roomId) > 0;
+  });
+  var msg = `no Line Drawings for ${room.roomId}`;
+  if (!hasLineDrawings) {
+    console.log(msg);
+  }
+};
+
+exports.DocValidation = DocValidation;
