@@ -11,7 +11,7 @@ const envs = [dev, staging, prod];
 
 
 /*****************Make Changes Below************************* */
-const changable = "Veeva"; //match the table id
+const changable = "NRF"; //match the table id
 /*****************Main*************************************************************** */
 async.waterfall(
   [

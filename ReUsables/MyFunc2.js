@@ -17,8 +17,6 @@ const getClientId = locationId => {
   return arr[0];
 };
 
-//console.log(getClientId("Aviva_jt5yo7in"));
-
 var listUGParams = locationId => {
   var clientId = getClientId(locationId);
   return {
@@ -59,7 +57,7 @@ exports.getUserGuideList = getUserGuideList;
  * ***************** */
 
 const listLDParams = locationId => {
-var clientId = getClientId(locationId);
+  var clientId = getClientId(locationId);
   return {
     Bucket: "hpc-data-prod",
     Prefix: `line-drawings/${clientId}/`
@@ -83,3 +81,33 @@ var getLineDrawingList = locationId => {
 };
 
 exports.getLineDrawingList = getLineDrawingList;
+
+/*********
+ * This is for listing out the list of Programfiles in one room
+ * ***************** */
+
+const listPFParams = locationId => {
+  var clientId = getClientId(locationId);
+  return {
+    Bucket: "hpc-data-prod",
+    Prefix: `program-files/${clientId}/${locationId}`
+  };
+};
+
+var getProgramFileList = locationId => {
+  return new Promise((resolve, reject) => {
+    s3.listObjects(listPFParams(locationId), function(err, data) {
+      if (err) console.log(err, err.stack);
+      else {
+        const arr = data.Contents;
+        const keys = arr.map(item => {
+          var str = removeBackSlash(item.Key);
+          return str;
+        });
+        resolve(keys);
+      }
+    });
+  });
+};
+
+exports.getProgramFileList = getProgramFileList;

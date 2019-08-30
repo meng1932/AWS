@@ -54,9 +54,10 @@ exports.systemInfoValidation = systemInfoValidation;
  * Validation for Others
  * ** */
 
-var DocValidation = (room, typeList, drawingList) => {
-  //UGValidation(room, typeList);
+var DocValidation = (room, typeList, drawingList, fileList) => {
+  UGValidation(room, typeList);
   LDValidation(room, drawingList);
+  PFValidation(room, fileList);
 };
 
 var UGValidation = (room, typeList) => {
@@ -75,6 +76,18 @@ var LDValidation = (room, drawingList) => {
   });
   var msg = `no Line Drawings for ${room.roomId}`;
   if (!hasLineDrawings) {
+    console.log(msg);
+  }
+};
+
+var PFValidation = (room, fileList) => {
+  var hasfiles = fileList.some(file => {
+    const hasRoom = file.indexOf(room.roomId) > 0;
+    const hasControlfiles = file.indexOf("Control_System") > 0;
+    return hasRoom && hasControlfiles;
+  });
+  var msg = `no ControlFiles for ${room.roomId}`;
+  if (!hasfiles) {
     console.log(msg);
   }
 };
