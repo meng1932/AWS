@@ -1,5 +1,6 @@
 "use strict";
 const async = require("async");
+const csv = require("csvtojson");
 //first get the data of one location for a week
 //make sure that for one period of time only one start
 //make array as [{roomid:"room123",time:[(starttime,endtime,functionname)]},...]
@@ -7,14 +8,15 @@ const async = require("async");
 async.waterfall([
   next => {
     const csvFilePath = "./data-1570211032543.csv";
-    const csv = require("csvtojson");
+
     csv()
       .fromFile(csvFilePath)
       .then(object => next(null, object));
   },
   (data, next) => next(null, parseLocationWeeklyData(data)),
   (data, next) => {
-    console.log(data);
+    //console.log(data);
+    data.forEach(room => parseRoomWeeklyData(room));
   }
 ]);
 
@@ -57,7 +59,7 @@ function parseRoomWeeklyData(arr) {
     meetings: timeArrParsed
   };
   output.push(RoomOutput);
-  console.log(output);
+  //console.log(output);
   return output;
 }
 
@@ -84,6 +86,7 @@ const parseTimeArr = timeArr => {
       outputArr.push(meeting);
     }
   }
+  console.log(outputArr);
   return outputArr;
 };
 
