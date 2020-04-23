@@ -3,7 +3,7 @@ AWS.config.region = "us-east-1";
 const async = require("async");
 const geoTz = require("geo-tz");
 /****************change here *****************/
-const env = "staging";
+const env = "prod";
 /****************change above ****************/
 var ddb = new AWS.DynamoDB.DocumentClient();
 let clientTableName = `hpc-clients-${env}`;
@@ -18,11 +18,16 @@ var updateparams = item => {
     Key: {
       id: item.id
     },
-    UpdateExpression: "SET #TZ = :TZ, #AB = :AB",
-    ExpressionAttributeNames: { "#TZ": "goal", "#AB": "tips" },
+    UpdateExpression: "SET #MR = :MR REMOVE summary, goal, tips",
+    ExpressionAttributeNames: { "#MR": "monthly_report" },
     ExpressionAttributeValues: {
-      ":TZ": 300,
-      ":AB": "This is the tips of the day"
+      ":MR": {
+        tips: "This is the tips of the day",
+        summary: "This is the summary",
+        lastReportTime: "2020-04-23T19:58:59Z",
+        nextReportTime: "2020-04-23T19:58:59Z",
+        goal: 300
+      }
     }
   };
 };
