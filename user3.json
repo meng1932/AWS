@@ -1,0 +1,498 @@
+{
+    "table": [
+        {
+            "username": "rqo0fzxzm_spinmaster_amitvspinmastercom",
+            "sub": "536578fd-5d85-41d0-9746-29037b37e527",
+            "email_verified": "true",
+            "updated_at": "1601488409",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Amit",
+            "family_name": "Varma",
+            "email": "amitv@spinmaster.com"
+        },
+        {
+            "username": "s62gucl8z__kajibolahit_playcom",
+            "sub": "b5037a6a-18bc-415e-8207-3fd0b409e9fe",
+            "email_verified": "true",
+            "updated_at": "1562771642",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Kayode",
+            "family_name": "Ajibola",
+            "email": "kajibola@hit-play.com"
+        },
+        {
+            "username": "sftg_gcsl__cstewarthit_playcom",
+            "sub": "7406949a-8fa5-41d5-95a7-ef7cdd82540f",
+            "email_verified": "true",
+            "updated_at": "1551808071",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Connor",
+            "family_name": "Stewart",
+            "email": "cstewart@hit-play.com"
+        },
+        {
+            "username": "sg64fsu6m__andym2pivotnowio",
+            "sub": "feb5162c-3a9c-40e1-8b30-385a94181ea6",
+            "email_verified": "true",
+            "updated_at": "1590609120",
+            "custom:user_group": "hpc-admin",
+            "given_name": "andy",
+            "family_name": "liu",
+            "email": "andy+m2@pivotnow.io"
+        },
+        {
+            "username": "skqbvgoii_spinmaster_davekspinmastercom",
+            "sub": "d62ed51a-c9fe-4576-b915-ae2d44ccf0d2",
+            "email_verified": "true",
+            "updated_at": "1601488314",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-users",
+            "given_name": "Dave",
+            "family_name": "Kaura",
+            "email": "davek@spinmaster.com"
+        },
+        {
+            "username": "soc9qxvion_undefined_zcontractorhit_playcom",
+            "sub": "00030f92-69cd-4bf2-a02c-7a8770e905c4",
+            "email_verified": "true",
+            "updated_at": "1596570696",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Zahid",
+            "family_name": "Contractor",
+            "email": "zcontractor@hit-play.com"
+        },
+        {
+            "username": "sog0xyyqi_cifinancial_ehoustondemohit_playcom",
+            "sub": "ba88d2aa-2949-48df-bbe3-6b5bc56bcf34",
+            "email_verified": "true",
+            "updated_at": "1607618526",
+            "custom:client_id": "CIFinancial",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Ethan",
+            "family_name": "Houston",
+            "email": "ehouston+demo@hit-play.com"
+        },
+        {
+            "username": "t77mc5z2a_cifinancial_ptshilumbacicom",
+            "sub": "6d2fe03a-0fc8-4642-ba10-99545c3089c0",
+            "email_verified": "true",
+            "updated_at": "1608247458",
+            "custom:client_id": "CIFinancial",
+            "custom:user_group": "hpc-users",
+            "given_name": "Patrick",
+            "family_name": "Tshilumba",
+            "email": "ptshilumba@ci.com"
+        },
+        {
+            "username": "t9tik8lef_hitplay_kaihitplayclientadmintest0716pivotnowio",
+            "sub": "2da673ce-59ac-4768-b269-5c241f06e418",
+            "email_verified": "true",
+            "updated_at": "1594921664",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "kai",
+            "family_name": "hitplayclientadmintest0716",
+            "email": "kai+hitplayclientadmintest0716@pivotnow.io"
+        },
+        {
+            "username": "td8i1qo2y_spinmaster_lyndenpspinmastercom",
+            "sub": "769acd59-ab53-420e-afed-aadbf4b0197a",
+            "email_verified": "true",
+            "updated_at": "1563980885",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Lynden",
+            "family_name": "Philadelphia",
+            "email": "lyndenp@spinmaster.com"
+        },
+        {
+            "username": "tfse8lk6n_spinmaster_brandonlspinmastercom",
+            "sub": "12a2b31b-6b8d-4c6f-aa26-42f91b9ce346",
+            "email_verified": "true",
+            "updated_at": "1601488345",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-users",
+            "given_name": "Brandon",
+            "family_name": "Lai",
+            "email": "brandonl@spinmaster.com"
+        },
+        {
+            "username": "tgbz_y8ne_hitplay_caroluserpivotnowio",
+            "sub": "c7176b6c-6c4c-4ad3-8ed2-6477029a9f89",
+            "email_verified": "true",
+            "updated_at": "1556900356",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-users",
+            "given_name": "CarolUser",
+            "family_name": "Meng",
+            "email": "caroluser@pivotnow.io"
+        },
+        {
+            "username": "tj96varo6__rpatelhit_playcom",
+            "sub": "90a200f7-50ef-4c48-8e97-6c79e52b18bb",
+            "email_verified": "true",
+            "updated_at": "1557343087",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Ronak",
+            "family_name": "Patel",
+            "email": "rpatel@hit-play.com"
+        }
+    ]
+}"username": "twcntuhrz_arido_carol1pivotnowio",
+"sub": "ea66a590-f252-4019-8583-6cd29c0f98e5",
+"email_verified": "true",
+"updated_at": "1607700638",
+"custom:client_id": "Arido",
+"custom:user_group": "hpc-client-admin",
+"given_name": "carol",
+"family_name": "test2012",
+"email": "Carol+1@pivotnow.io"
+},
+{
+"username": "tzhivpmqy_spinmaster_shetalbspinmastercom",
+"sub": "1c8a6b31-dc5b-4ed9-939e-007d76c82636",
+"email_verified": "true",
+"updated_at": "1555436506",
+"custom:client_id": "SpinMaster",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Shetal",
+"family_name": "Bhatt",
+"email": "shetalb@spinmaster.com"
+},
+{
+"username": "uges1zlju_woodbridge_ksiuwoodbridgecom",
+"sub": "d18e1b77-7052-4628-9481-1f3e4bf8fbb2",
+"email_verified": "true",
+"updated_at": "1609868247",
+"custom:client_id": "Woodbridge",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Keith",
+"family_name": "Siu",
+"email": "ksiu@woodbridge.com"
+},
+{
+"username": "ulrco6obm_cifinancial_hattricicom",
+"sub": "89da93cf-0df7-4a7d-a747-894b76def0f3",
+"email_verified": "true",
+"updated_at": "1608247659",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-users",
+"given_name": "Harneesh",
+"family_name": "Attri",
+"email": "hattri@ci.com"
+},
+{
+"username": "uzyg80nr6_hitplay_monikaautomationpivotnowio",
+"sub": "93d359eb-f904-4bae-99bb-23debf45c7f1",
+"email_verified": "true",
+"updated_at": "1562084593",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Monika",
+"family_name": "Ibana",
+"email": "monika+automation@pivotnow.io"
+},
+{
+"username": "v3tpksz9q_loyaltyone_andy1pivotnowio",
+"sub": "ee0ecb32-c5fb-47ea-8a47-8050f3b1161a",
+"email_verified": "true",
+"updated_at": "1556562139",
+"custom:client_id": "LoyaltyOne",
+"custom:user_group": "hpc-client-admin",
+"given_name": "test",
+"family_name": "test",
+"email": "andy+1@pivotnow.io"
+},
+{
+"username": "vj2wbhx_d_cifinancial_pumbrellocicom",
+"sub": "7afecaae-97fb-45db-a4c9-81486f08e3e0",
+"email_verified": "true",
+"updated_at": "1607717433",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Paolo",
+"family_name": "Umbrello",
+"email": "pumbrello@ci.com"
+},
+{
+"username": "vlgabwvcw_woodbridge_jhaymerwoodbridgecom",
+"sub": "25f77204-2754-4d3d-aaf5-fc18b7acbe54",
+"email_verified": "true",
+"updated_at": "1609966294",
+"custom:client_id": "Woodbridge",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Justine",
+"family_name": "Haymer",
+"email": "jhaymer@woodbridge.com"
+},
+{
+"username": "vndhieb0k_aviva_helenlingavivacom",
+"sub": "b83b076e-293c-4198-b7f0-1ba7398b6602",
+"email_verified": "true",
+"updated_at": "1556125129",
+"custom:client_id": "Aviva",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Helen",
+"family_name": "Ling",
+"email": "helen.ling@aviva.com"
+},
+{
+"username": "vorpkwveh_delos_andydelos1pivotnowio",
+"sub": "5c993d4e-df35-4964-a882-c59a7294f6bc",
+"email_verified": "true",
+"updated_at": "1595441169",
+"custom:client_id": "Delos",
+"custom:user_group": "hpc-users",
+"given_name": "andy",
+"family_name": "liu",
+"email": "andy+delos1@pivotnow.io"
+},
+{
+"username": "vq2dofvzy_trbtecnolo_cmonteirotrbscorpcom",
+"sub": "36f7fdad-d305-4b6b-8810-4a9e4abac0fb",
+"email_verified": "true",
+"updated_at": "1608905428",
+"custom:client_id": "TRBTECNOLO",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Carlos",
+"family_name": "Monteiro",
+"email": "cmonteiro@trbscorp.com"
+},
+{
+"username": "vy_gf1oiq__mamobedahit_playcom",
+"sub": "6d154917-57fd-40c9-9be5-d63490575886",
+"email_verified": "true",
+"updated_at": "1594922769",
+"custom:user_group": "hpc-admin",
+"given_name": "Michael",
+"family_name": "Amobeda",
+"email": "mamobeda@hit-play.com"
+},
+{
+"username": "w0gbski9y_hitplay_maibasicpivotnowio",
+"sub": "b9c97b79-3913-420c-96dc-7ec49ed747ad",
+"email_verified": "true",
+"updated_at": "1610130774",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-users",
+"given_name": "Mai",
+"family_name": "Basic",
+"email": "mai+basic@pivotnow.io"
+},
+{
+"username": "w2s8om1wr__sterlingpivotnowio",
+"sub": "81ce2b1b-b0f1-43c9-ae04-031908107024",
+"email_verified": "true",
+"updated_at": "1611239754",
+"custom:user_group": "hpc-admin",
+"given_name": "Sterling",
+"family_name": "Finn",
+"email": "sterling@pivotnow.io"
+},
+{
+"username": "wct3jbx95_spinmaster_ericgspinmastercom",
+"sub": "9ae6945b-0b96-4b52-84ae-a5ba03570e9c",
+"email_verified": "true",
+"updated_at": "1570811889",
+"custom:client_id": "SpinMaster",
+"custom:user_group": "hpc-users",
+"given_name": "Eric",
+"family_name": "Gordon",
+"email": "ericg@spinmaster.com"
+},
+{
+"username": "whunwjdly_hitplay_andycifinancial1pivotnowio",
+"sub": "9c19e4ce-b203-43a0-8900-02d3ee63cb25",
+"email_verified": "true",
+"updated_at": "1607644413",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-client-admin",
+"given_name": "andy",
+"family_name": "liu",
+"email": "ANDY+cifinancial1@pivotnow.io"
+},
+{
+"username": "wo8v0gaqv__maipivotnowio",
+"sub": "613f3f47-80e8-4611-b3bf-42897cc40bea",
+"email_verified": "true",
+"updated_at": "1610130488",
+"custom:user_group": "hpc-admin",
+"given_name": "Mai ",
+"family_name": "Nguyen",
+"email": "mai@pivotnow.io"
+}
+]
+}"username": "x__f398dt_delos_robbydelospivotnowio",
+"sub": "8da3f00e-d1f5-4c2d-a65d-add51c36361f",
+"email_verified": "true",
+"updated_at": "1595437826",
+"custom:client_id": "Delos",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Robby",
+"family_name": "K",
+"email": "robby+delos@pivotnow.io"
+},
+{
+"username": "xfaa9fr2k_cifinancial_bkarulascicom",
+"sub": "aeacc5eb-e58f-44bd-a1a5-559ec5702c9a",
+"email_verified": "true",
+"updated_at": "1607626321",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Boris",
+"family_name": "Karulas",
+"email": "BKarulas@ci.com"
+},
+{
+"username": "xhhi0_qdb__carolpivotnowio",
+"sub": "da15695c-c6f7-423e-a216-a827203d5be4",
+"email_verified": "true",
+"updated_at": "1557408419",
+"custom:user_group": "hpc-admin",
+"given_name": "Carol",
+"family_name": "Meng",
+"email": "carol@pivotnow.io"
+},
+{
+"username": "xoxxmcr3h_hitplay_aliu716hit_playcom",
+"sub": "e454dde9-1d9b-4973-9ae8-1703b02146be",
+"email_verified": "true",
+"updated_at": "1594914618",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-client-admin",
+"given_name": "ANDY",
+"family_name": "LIU",
+"email": "aliu+716@hit-play.com"
+},
+{
+"username": "xt7rnk6o6__robbyhppivotnowio",
+"sub": "a73db88b-1f56-412e-b2b5-3989f4cbd1de",
+"email_verified": "true",
+"updated_at": "1588106791",
+"custom:user_group": "hpc-admin",
+"given_name": "R",
+"family_name": "K",
+"email": "robby+hp@pivotnow.io"
+},
+{
+"username": "xyyrcsggh__ppopik1hit_playcom",
+"sub": "398b779a-5b72-489b-aea2-1698920f1a8b",
+"email_verified": "true",
+"updated_at": "1573861214",
+"custom:user_group": "hpc-admin",
+"given_name": "Paul",
+"family_name": "Popik",
+"email": "ppopik+1@hit-play.com"
+},
+{
+"username": "yexl_32yd_hitplay_kaicreateusertestpivotnowio",
+"sub": "fc00fc89-77c1-4459-b7a7-25fe5630aebf",
+"email_verified": "true",
+"updated_at": "1594742052",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-client-admin",
+"given_name": "kai",
+"family_name": "createusertest",
+"email": "kai+createusertest@pivotnow.io"
+},
+{
+"username": "yl1vylfax_aviva_christopherparbhuavivacom",
+"sub": "d6926ed1-0366-405c-b616-b9445fdab68d",
+"email_verified": "true",
+"updated_at": "1574182253",
+"custom:client_id": "Aviva",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Christopher",
+"family_name": "Parbhu",
+"email": "christopher.parbhu@aviva.com"
+},
+{
+"username": "ynyjmgdpm_testa_carolzoomtestapivotnowio",
+"sub": "75c77ef5-02c4-460a-b483-47c5103d97bb",
+"email_verified": "true",
+"updated_at": "1606429370",
+"custom:client_id": "TestA",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Zoom",
+"family_name": "Test A",
+"email": "carol+zoomtesta@pivotnow.io"
+},
+{
+"username": "z2m8bedl3_cifinancial_amurraycicom",
+"sub": "000a3462-d983-48c5-8b48-2d6bf74e9ec4",
+"email_verified": "true",
+"updated_at": "1608247484",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-users",
+"given_name": "Andrew",
+"family_name": "Murray",
+"email": "amurray@ci.com"
+},
+{
+"username": "zamy11cva_hitplay_mackenzie123pivotnowio",
+"sub": "97a7fc6d-2500-4f31-8b64-1b6f5419ab0f",
+"email_verified": "true",
+"updated_at": "1603900259",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-users",
+"given_name": "Kenz ",
+"family_name": "Basic123",
+"email": "mackenzie+123@pivotnow.io"
+},
+{
+"username": "zbyreupcl_georgeweston_domenicocurrowestonca",
+"sub": "e16e2b66-fec8-4751-8044-477fbc689cc4",
+"email_verified": "true",
+"updated_at": "1583864697",
+"custom:client_id": "GeorgeWeston",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Domenico",
+"family_name": "Curro",
+"email": "domenico.curro@weston.ca"
+},
+{
+"username": "zgdwesrla_woodbridge_jmorrisonwoodbridgecom",
+"sub": "b21207f6-36bb-4809-b54c-9a3507bdf6a1",
+"email_verified": "true",
+"updated_at": "1609868320",
+"custom:client_id": "Woodbridge",
+"custom:user_group": "hpc-client-admin",
+"given_name": "James",
+"family_name": "Morrison",
+"email": "jmorrison@woodbridge.com"
+},
+{
+"username": "zjebh4e00_cifinancial_idilabdicicom",
+"sub": "0e9c3c2a-a31a-45b5-8c1f-e309dedd6ac8",
+"email_verified": "true",
+"updated_at": "1608247636",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-users",
+"given_name": "Idil",
+"family_name": "Abdi",
+"email": "idil.abdi@ci.com"
+},
+{
+"username": "znuz4mol9_aviva_michelberardinoavivacom",
+"sub": "7fe64dba-e011-44e2-b8b8-c3b17ec5f440",
+"email_verified": "true",
+"updated_at": "1574182203",
+"custom:client_id": "Aviva",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Michel",
+"family_name": "Berardino",
+"email": "michel.berardino@aviva.com"
+},
+{
+"username": "zzq_opnop__kevinhit_playcom",
+"sub": "d492af45-ed6e-4057-8fcf-a623767c545d",
+"email_verified": "true",
+"updated_at": "1570826604",
+"custom:user_group": "hpc-admin",
+"given_name": "Kevin",
+"family_name": "Rauch",
+"email": "kevin@hit-play.com"
+}
+]
+}

@@ -1,0 +1,640 @@
+{
+    "table": [
+        {
+            "username": "0ovtqivt4__mackenziepivotnowio",
+            "sub": "51eb90b4-8aad-4418-b154-c3dcba40761f",
+            "email_verified": "true",
+            "updated_at": "1598381066",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Mackenzie",
+            "family_name": "Obermayer",
+            "email": "mackenzie@pivotnow.io"
+        },
+        {
+            "username": "14ot0inji_aviva_ronwongavivacom",
+            "sub": "1bdae005-e65f-4484-a06f-5e5b9af7c4cc",
+            "email_verified": "true",
+            "updated_at": "1574182102",
+            "custom:client_id": "Aviva",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Ron",
+            "family_name": "Wong",
+            "email": "ron.wong@aviva.com"
+        },
+        {
+            "username": "1y0etzbqip_undefined_cicelyhit_playcom",
+            "sub": "6abe6d76-e90d-4c1d-9e34-4825848c5ab2",
+            "email_verified": "true",
+            "updated_at": "1596570694",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Chris",
+            "family_name": "Icely",
+            "email": "cicely@hit-play.com"
+        },
+        {
+            "username": "26opyvizr_georgeweston_ericrussellwestonca",
+            "sub": "b118113b-0907-4311-8412-e51ee9e1f3b7",
+            "email_verified": "true",
+            "updated_at": "1581530430",
+            "custom:client_id": "GeorgeWeston",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Eric",
+            "family_name": "Russell",
+            "email": "eric.russell@weston.ca"
+        },
+        {
+            "username": "2vuaxpyjg__laurapivotnowio",
+            "sub": "ce95d89e-149b-4213-a430-a8e079edd0cd",
+            "email_verified": "true",
+            "updated_at": "1600870053",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Laura",
+            "family_name": "Valles",
+            "email": "laura@pivotnow.io"
+        },
+        {
+            "username": "3ghq9cvfi_aviva_kaiavivaclienttestpivotnowio",
+            "sub": "6a8e8582-4214-4fc2-a3a7-9829008c1383",
+            "email_verified": "true",
+            "updated_at": "1594913263",
+            "custom:client_id": "Aviva",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "kai",
+            "family_name": "aviva client test",
+            "email": "kai+avivaClientTest@pivotnow.io"
+        },
+        {
+            "username": "4ioxpl_xt__andydelospivotnowio",
+            "sub": "27b4869d-4f36-41f7-a6e6-81c878c288b2",
+            "email_verified": "true",
+            "updated_at": "1595440970",
+            "custom:user_group": "hpc-tech",
+            "given_name": "andy",
+            "family_name": "liu",
+            "email": "andy+delos@pivotnow.io"
+        },
+        {
+            "username": "51ydyysrs_hitplay_maiclientadminpivotnowio",
+            "sub": "37e5f6d9-0b18-4069-b72c-61f40575346d",
+            "email_verified": "true",
+            "updated_at": "1610130746",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Mai",
+            "family_name": "ClientAdmin",
+            "email": "mai+clientadmin@pivotnow.io"
+        },
+        {
+            "username": "54r_vo_em_hitplay_aliutesthit_playcom",
+            "sub": "06dccd2c-aa29-4c4d-a7ef-5901b4e19410",
+            "email_verified": "true",
+            "updated_at": "1594750965",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "ANDY",
+            "family_name": "LIU",
+            "email": "aliu+test@hit-play.com"
+        },
+        {
+            "username": "5azmsnxby__kaipivotnowio",
+            "sub": "01308835-e772-4d70-b940-45534f6c3ed5",
+            "email_verified": "true",
+            "updated_at": "1588690334",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Kai",
+            "family_name": "Huang",
+            "email": "kai@pivotnow.io"
+        },
+        {
+            "username": "5rovls9oh__ehoustonhit_playcom",
+            "sub": "419cdc42-7f7a-4b1a-b356-d98b7111abc3",
+            "email_verified": "true",
+            "updated_at": "1592833960",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Ethan",
+            "family_name": "Houston",
+            "email": "ehouston@hit-play.com"
+        },
+        {
+            "username": "62btsy_gr_woodbridge_ssreetharanwoodbridgecom",
+            "sub": "810dda15-65d4-4f2a-881c-601695ae2bee",
+            "email_verified": "true",
+            "updated_at": "1609868148",
+            "custom:client_id": "Woodbridge",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Sid",
+            "family_name": "Sreetharan",
+            "email": "ssreetharan@woodbridge.com"
+        },
+        {
+            "username": "6gna0uylc__robbypaulpivotnowio",
+            "sub": "bf6a9c95-9a26-4356-bb03-15be1b0b212e",
+            "email_verified": "true",
+            "updated_at": "1559573048",
+            "custom:user_group": "hpc-tech",
+            "given_name": "Paul",
+            "family_name": "Popik",
+            "email": "robby+paul@pivotnow.io"
+        },
+        {
+            "username": "7ilppyhrl_hitplay_llacerdauserhit_playcom",
+            "sub": "54a3c326-1f51-4be1-acc4-53395c90a479",
+            "email_verified": "true",
+            "updated_at": "1583183422",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-users",
+            "given_name": "lindolfo",
+            "family_name": "lacerda",
+            "email": "llacerda+user@hit-play.com"
+        },
+        {
+            "username": "8fpvwrw_j_aviva_carol233pivotnowio",
+            "sub": "3aac392a-a99e-4e94-b2b2-96a1bce5d680",
+            "email_verified": "true",
+            "updated_at": "1594922411",
+            "custom:client_id": "Aviva",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Test",
+            "family_name": "Carol",
+            "email": "carol+233@pivotnow.io"
+        },
+        {
+            "username": "9odvfa7km_spinmaster_williamkspinmastercom",
+            "sub": "6c0f01e2-0883-4bf5-9107-6244cd3e2621",
+            "email_verified": "true",
+            "updated_at": "1563302172",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-users",
+            "given_name": "William",
+            "family_name": "Kwok",
+            "email": "williamk@spinmaster.com"
+        },
+        {
+            "username": "9qv9wmtwo_hitplay_rkanghphit_playcom",
+            "sub": "5dc1d1b4-bc32-4132-add7-f97d64f63c11",
+            "email_verified": "true",
+            "updated_at": "1588105087",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Robby",
+            "family_name": "K",
+            "email": "rkang+hp@hit-play.com"
+        },
+        {
+            "username": "EricRauch",
+            "sub": "1aa25d2e-8ea2-460c-ab36-ffcf48e5d7d0",
+            "email_verified": "true",
+            "updated_at": "1515080813",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Eric",
+            "family_name": "Rauch",
+            "email": "eric@hit-play.com"
+        },
+        {
+            "username": "IshaqueKhan",
+            "sub": "097e1953-5483-42ed-b3d6-d6119b5a947f",
+            "email_verified": "true",
+            "updated_at": "1515080580",
+            "custom:client_id": "LoyaltyOne",
+            "custom:user_group": "hpc-users",
+            "given_name": "Ishaque",
+            "family_name": "Khan",
+            "email": "ikhan@loyalty.com"
+        },
+        {
+            "username": "RobbyKang",
+            "sub": "afc0a291-12fe-43a0-8c55-5b8238fbff55",
+            "email_verified": "true",
+            "updated_at": "1512756467",
+            "custom:client_id": "LoyaltyOne",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Robby",
+            "family_name": "Kang",
+            "email": "rkang@hit-play.com"
+        },
+        {
+            "username": "ShawnDouglas",
+            "sub": "5c403adf-877f-4858-a879-de9eeb917cf3",
+            "email_verified": "true",
+            "updated_at": "1514917844",
+            "custom:client_id": "LoyaltyOne",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Shawn",
+            "family_name": "Douglas",
+            "email": "sdouglas@loyalty.com"
+        },
+        {
+            "username": "_8n9vul7l_jonk_stroudsoldiers2020yahoocom",
+            "sub": "05e9720e-9f7f-4558-88fb-5bc69202cf23",
+            "email_verified": "true",
+            "updated_at": "1610685169",
+            "custom:client_id": "JonK",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "jonathan",
+            "family_name": "knight",
+            "email": "stroudsoldiers2020@yahoo.com"
+        },
+        {
+            "username": "_fle_ekzp__andycognitoprod1pivotnowio",
+            "sub": "8d1d6fe8-fd58-4dbd-a467-2a89415430c1",
+            "email_verified": "true",
+            "updated_at": "1590700004",
+            "custom:user_group": "hpc-admin",
+            "given_name": "andy",
+            "family_name": "liu",
+            "email": "andy+cognitoprod1@pivotnow.io"
+        },
+        {
+            "username": "_q_vqesfj_loyaltyone_fwangloyaltycom",
+            "sub": "f6d07e90-ee31-42dc-87b6-9f0a6a4d0b30",
+            "email_verified": "true",
+            "updated_at": "1548272765",
+            "custom:client_id": "LoyaltyOne",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Fei",
+            "family_name": "Wang",
+            "email": "fwang@loyalty.com"
+        },
+        {
+            "username": "a4on38gjgw_undefined_wladbrookhit_playcom",
+            "sub": "25063056-807b-4264-9a01-79d1070b3054",
+            "email_verified": "true",
+            "updated_at": "1596570453",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Will",
+            "family_name": "Ladbrook",
+            "email": "wladbrook@hit-play.com"
+        },
+        {
+            "username": "acdc3uzfu_aviva_ericmalcolmavivacom",
+            "sub": "4b4f5ac8-fdb9-4f5c-b6c1-247f3e153a19",
+            "email_verified": "true",
+            "updated_at": "1564699011",
+            "custom:client_id": "Aviva",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Eric",
+            "family_name": "Malcolm",
+            "email": "eric.malcolm@aviva.com"
+        },
+        {
+            "username": "ajzgpio9a_opsmanager_diegofonsecaglezgmailcom",
+            "sub": "308950f2-413a-4c9d-ad39-7708509f057c",
+            "email_verified": "true",
+            "updated_at": "1609122290",
+            "custom:client_id": "OPSManager",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Diego",
+            "family_name": "Fonseca",
+            "email": "diegofonsecaglez@gmail.com"
+        },
+        {
+            "username": "aoycdxnx7_spinmaster_zeeqspinmastercom",
+            "sub": "df6ff3e8-11ee-4ce5-911d-f87357bf3f6b",
+            "email_verified": "true",
+            "updated_at": "1563980800",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-users",
+            "given_name": "Zee",
+            "family_name": "Qassim",
+            "email": "zeeq@spinmaster.com"
+        },
+        {
+            "username": "as4cp1d3o_hitplay_mackenzieclientadminpivotnowio",
+            "sub": "b05a2c36-0e25-4956-978e-6ce173fe9b0c",
+            "email_verified": "true",
+            "updated_at": "1599758765",
+            "custom:client_id": "Hitplay",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Kenzie ",
+            "family_name": "Admin",
+            "email": "mackenzie+clientadmin@pivotnow.io"
+        },
+        {
+            "username": "ascsvomax_spinmaster_tylerpspinmastercom",
+            "sub": "aafa3115-911d-4c3c-b3ae-0327d0d3ef84",
+            "email_verified": "true",
+            "updated_at": "1565177101",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-client-admin",
+            "given_name": "Tyler",
+            "family_name": "Pollard",
+            "email": "tylerp@spinmaster.com"
+        },
+        {
+            "username": "azirsks9cz_undefined_chuanghit_playcom",
+            "sub": "a49bf889-ae35-4c1d-a558-9d112be85528",
+            "email_verified": "true",
+            "updated_at": "1596567821",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Chen",
+            "family_name": "Huang",
+            "email": "chuang@hit-play.com"
+        },
+        {
+            "username": "b11kfblpf__llacerdahit_playcom",
+            "sub": "3f845333-b416-4f9a-857a-bb8d10d68117",
+            "email_verified": "true",
+            "updated_at": "1542748774",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Lindolfo",
+            "family_name": "Lacerda",
+            "email": "llacerda@hit-play.com"
+        },
+        {
+            "username": "b4u84npw___pganeshhit_playcom",
+            "sub": "43d72223-3e7f-4a66-81da-eccfd7b9f548",
+            "email_verified": "true",
+            "updated_at": "1596570321",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Prithvi",
+            "family_name": "Ganesh",
+            "email": "pganesh@hit-play.com"
+        },
+        {
+            "username": "b92fxohwm__andy111pivotnowio",
+            "sub": "b9ddd1ab-6604-49c6-a705-26761ceadfe2",
+            "email_verified": "true",
+            "updated_at": "1610129566",
+            "custom:user_group": "hpc-admin",
+            "given_name": "andy",
+            "family_name": "liu",
+            "email": "andy+111@pivotnow.io"
+        },
+        {
+            "username": "ba0adl4w1__mchenghit_playcom",
+            "sub": "7187233f-6028-4eec-8c88-eefc907fa465",
+            "email_verified": "true",
+            "updated_at": "1590700668",
+            "custom:user_group": "hpc-admin",
+            "given_name": "Michael",
+            "family_name": "Cheng",
+            "email": "mcheng@hit-play.com"
+        },
+        {
+            "username": "benhaayet_spinmaster_avpocspinmastercom",
+            "sub": "aa661c15-5d69-4fb4-a3c0-7babf1e09d90",
+            "email_verified": "true",
+            "updated_at": "1571424713",
+            "custom:client_id": "SpinMaster",
+            "custom:user_group": "hpc-users",
+            "given_name": "IT ",
+            "family_name": "TV",
+            "email": "avpoc@spinmaster.com"
+        }
+    ]
+}"username": "bk65uz8dy__andypivotnowio",
+"sub": "e25f4f06-3e9b-4ab6-89fc-531d80eee15e",
+"email_verified": "true",
+"updated_at": "1554839350",
+"custom:user_group": "hpc-admin",
+"given_name": "YUQING",
+"family_name": "LIU",
+"email": "andy@pivotnow.io"
+},
+{
+"username": "bl1vhd6ta_undefined_ribragimovhit_playcom",
+"sub": "c0772021-2e0b-47e1-a3d6-99a61c3b632d",
+"email_verified": "true",
+"updated_at": "1596570693",
+"custom:user_group": "hpc-admin",
+"given_name": "Renat",
+"family_name": "Ibragimov",
+"email": "ribragimov@hit-play.com"
+},
+{
+"username": "bveao5kpu_cifinancial_ajamiesoncicom",
+"sub": "2ff4e0c0-3457-43df-8575-ad310c5c3856",
+"email_verified": "true",
+"updated_at": "1608247551",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-users",
+"given_name": "Adam",
+"family_name": "Jamieson",
+"email": "ajamieson@ci.com"
+},
+{
+"username": "bxl9lwbrz__llacerda1hit_playcom",
+"sub": "723e2086-10dc-413d-8162-c94937904e0d",
+"email_verified": "true",
+"updated_at": "1569436929",
+"custom:user_group": "hpc-tech",
+"given_name": "Lindolfo",
+"family_name": "Tech",
+"email": "llacerda+1@hit-play.com"
+},
+{
+"username": "bykojgg8z_mcmillan_balazsszilagyimcmillanca",
+"sub": "40a7356a-e038-4244-858a-daf5695e3081",
+"email_verified": "true",
+"updated_at": "1531142280",
+"custom:client_id": "McMillan",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Balazs",
+"family_name": "Szilagyi",
+"email": "balazs.szilagyi@mcmillan.ca"
+},
+{
+"username": "c4rykqnfr__vchanhit_playcom",
+"sub": "5a77f112-653f-481b-b32f-5cc2aea44271",
+"email_verified": "true",
+"updated_at": "1539787833",
+"custom:user_group": "hpc-admin",
+"given_name": "Victor",
+"family_name": "Chan",
+"email": "vchan@hit-play.com"
+},
+{
+"username": "c93dt_oba_aviva_nabilchehadeavivacom",
+"sub": "f2601ef2-d173-4a41-a96f-90d7bba86f45",
+"email_verified": "true",
+"updated_at": "1574182088",
+"custom:client_id": "Aviva",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Nabil",
+"family_name": "Chehade",
+"email": "nabil.chehade@aviva.com"
+},
+{
+"username": "c_sinhyt1_hitplay_mackenziebasicpivotnowio",
+"sub": "14f738a5-5bf6-4ca3-9f1c-da6c50fd6aa1",
+"email_verified": "true",
+"updated_at": "1599753551",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-users",
+"given_name": "Kenzie ",
+"family_name": "Basic ",
+"email": "mackenzie+basic@pivotnow.io"
+},
+{
+"username": "chgglqmj0_spinmaster_skyleryspinmastercom",
+"sub": "0fe94ea3-9d04-4b7c-9885-95ce41de6cca",
+"email_verified": "true",
+"updated_at": "1569439065",
+"custom:client_id": "SpinMaster",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Sky",
+"family_name": "Yardley",
+"email": "skylery@spinmaster.com"
+},
+{
+"username": "cnija8lkx__dguptahit_playcom",
+"sub": "dcc29baa-fd3b-448d-a9a9-5bd6a520a23b",
+"email_verified": "true",
+"updated_at": "1564500775",
+"custom:user_group": "hpc-admin",
+"given_name": "Devesh",
+"family_name": "Gupta",
+"email": "dgupta@hit-play.com"
+},
+{
+"username": "dbfuzwosa_hitplay_marijapivotnowio",
+"sub": "e6c58a13-dd62-4595-9e54-c0c38bb670c2",
+"email_verified": "true",
+"updated_at": "1599146313",
+"custom:client_id": "Hitplay",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Marija",
+"family_name": "Ivanovska",
+"email": "marija@pivotnow.io"
+},
+{
+"username": "ddn6ig9da_orange_laurentadolpheorangecom",
+"sub": "988194c3-5326-4d95-b5d7-2b14328e70d9",
+"email_verified": "true",
+"updated_at": "1609855118",
+"custom:client_id": "ORANGE",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Laurent",
+"family_name": "Adolphe",
+"email": "laurent.adolphe@orange.com"
+},
+{
+"username": "dhqb9f5mt__robby12pivotnowio",
+"sub": "88efdff3-0c43-45a5-b1c2-14253d1a6521",
+"email_verified": "true",
+"updated_at": "1573861035",
+"custom:user_group": "hpc-admin",
+"given_name": "Robby",
+"family_name": "K",
+"email": "robby+12@pivotnow.io"
+},
+{
+"username": "dyyiwqe09__nliaohit_playcom",
+"sub": "f0ac2200-be58-483e-833e-22e15bf95eb6",
+"email_verified": "true",
+"updated_at": "1599143254",
+"custom:user_group": "hpc-admin",
+"given_name": "Nelson",
+"family_name": "Liao",
+"email": "nliao@hit-play.com"
+},
+{
+"username": "e_7y_aqax_delos_ehoustonuserhit_playcom",
+"sub": "ae7758a2-f5b8-4588-a1d0-43f12b506e90",
+"email_verified": "true",
+"updated_at": "1600374584",
+"custom:client_id": "Delos",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Ethan",
+"family_name": "Houston (user)",
+"email": "ehouston+user@hit-play.com"
+},
+{
+"username": "ejcfoomei_cifinancial_ykamalcicom",
+"sub": "d2171ebf-9b2b-4a1e-8c6b-fac4d56e29a0",
+"email_verified": "true",
+"updated_at": "1608247570",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-users",
+"given_name": "Yusuf",
+"family_name": "Kamal",
+"email": "ykamal@ci.com"
+},
+{
+"username": "ejhfn8qee__suhapivotnowio",
+"sub": "c2edf934-75c2-4dd7-90a2-79e9a375f5f3",
+"email_verified": "true",
+"updated_at": "1603837083",
+"custom:user_group": "hpc-admin",
+"given_name": "Suha",
+"family_name": "Khalil",
+"email": "suha@pivotnow.io"
+},
+{
+"username": "eyajezvmy_cifinancial_ejosephcicom",
+"sub": "c0880780-0de5-4459-83f7-b1d00beee940",
+"email_verified": "true",
+"updated_at": "1607613583",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Edward ",
+"family_name": "Joseph",
+"email": "ejoseph@ci.com"
+},
+{
+"username": "fafzxxzyc1_undefined_kbarkleyhit_playcom",
+"sub": "d656a29e-3f4a-4ac1-b6d7-02b1d96cdd4f",
+"email_verified": "true",
+"updated_at": "1596570454",
+"custom:user_group": "hpc-admin",
+"given_name": "Keith",
+"family_name": "Barkley",
+"email": "kbarkley@hit-play.com"
+},
+{
+"username": "fcenamgaw_cifinancial_mfernandescicom",
+"sub": "d4904f0a-79a1-475f-8a53-50e5b46e0f39",
+"email_verified": "true",
+"updated_at": "1607613511",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Morley",
+"family_name": "Fernandes",
+"email": "mfernandes@ci.com"
+}
+]
+}"username": "flb7_fi_q_aviva_gregmccarthyavivacom",
+"sub": "c63f813e-164a-4d8a-911d-33c046e6e9d7",
+"email_verified": "true",
+"updated_at": "1574182233",
+"custom:client_id": "Aviva",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Greg",
+"family_name": "Mccarthy",
+"email": "greg.mccarthy@aviva.com"
+},
+{
+"username": "frjvpcxii_aviva_anilkashyapavivacom",
+"sub": "5e43fa3c-9b51-4620-b924-c38102c79a2f",
+"email_verified": "true",
+"updated_at": "1574182188",
+"custom:client_id": "Aviva",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Anil",
+"family_name": "Kashyap",
+"email": "anil.kashyap@aviva.com"
+},
+{
+"username": "g3fd93e9p_cifinancial_ktsecicom",
+"sub": "7c35a08f-5e43-480e-89db-71ce3168df57",
+"email_verified": "true",
+"updated_at": "1608247357",
+"custom:client_id": "CIFinancial",
+"custom:user_group": "hpc-users",
+"given_name": "Kaydoon",
+"family_name": "Tse",
+"email": "ktse@ci.com"
+},
+{
+"username": "gehufx7ds_georgeweston_briancairneywestonca",
+"sub": "617bb216-c060-4c77-ab57-bcf90b24ba1e",
+"email_verified": "true",
+"updated_at": "1597063273",
+"custom:client_id": "GeorgeWeston",
+"custom:user_group": "hpc-client-admin",
+"given_name": "Brian",
+"family_name": "Cairney",
+"email": "brian.cairney@weston.ca"
+}
+]
+}
